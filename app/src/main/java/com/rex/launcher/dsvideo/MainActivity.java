@@ -21,8 +21,8 @@ public class MainActivity extends Activity {
         //setContentView(R.layout.activity_main);
 
         List<Intent> appList = new ArrayList<>();
-        appList.add(new Intent("com.splashtop.streamer.api.DEPLOY").setClassName("com.synology.dsvideo", "com.synology.dsvideo.ui.WelcomeActivity"));
-        appList.add(new Intent("com.splashtop.streamer.api.DEPLOY").setClassName("com.synology.dsvideo", "com.synology.dsvideo.SplashActivity"));
+        appList.add(new Intent(Intent.ACTION_MAIN).setClassName("com.synology.dsvideo", "com.synology.dsvideo.ui.WelcomeActivity"));
+        appList.add(new Intent(Intent.ACTION_MAIN).setClassName("com.synology.dsvideo", "com.synology.dsvideo.SplashActivity"));
 
         for (Intent intent : appList) {
             if (launch(intent)) {
