@@ -12,7 +12,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 30
 
-        versionName "1.0.x"
+        versionName "1.0.1"
         versionCode Integer.parseInt(([ 'git','rev-list','--count','HEAD'].execute().text).trim())
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
